@@ -1,0 +1,31 @@
+# Permalinks
+permalink:      /:year-:month-:day/:title
+
+# Setup
+title:          Steven Mills
+paginate:       5
+baseurl:        ""
+url:            "http://stevenmills.io"
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         Steven Mills
+  url:          http://stevenmills.io
+  email:        hello@stevenmills.co
+
+# Custom vars
+version:        3.4.1
+github:
+  repo:
+
+# Gems
+plugins:
+  - jekyll-paginate
