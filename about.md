@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Welcome "
+layout: about
+title: "Welcome"
 author: "Steven"
 permalink: /about/
 ---
@@ -12,3 +12,6 @@ I will soon be finishing up my Full-Stack Bootcamp with Bloc, where I have learn
 Once I finish up this internship I hope to land a full-time position as a junior web developer creating beautiful websites made with simple and clean code.
 
 Thanks for checking out my page!
+
+<br>
+<hr>
