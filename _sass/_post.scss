@@ -2,8 +2,9 @@
   padding: 3rem 0;
 
   &-info {
+    font-size: .75rem;
     color: $default-tint;
-    font-family: $share-tech-mono;
+    font-family: $sans-font;
     letter-spacing: .5px;
     text-align: center;
 
@@ -28,6 +29,7 @@
   }
 
   p {
+    font-family: $sans-font;
     margin: 0 0 1rem;
     text-align: justify;
   }
