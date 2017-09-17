@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Jumping Into React.js &middot; Steven Mills
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Steven Mills</h2>
+        </a>
+        <ul>
+          <li><a href="http://localhost:4000/about">About</a></li>
+          <li><a href="/">Posts</a></li>
+          <li><a href="https://github.com/stevenmillsii" class="ion-social-octocat"></a></li>
+          <li><a href="https://www.instagram.com/stevenmills.io/" class="ion-social-instagram"></a></li>
+          <li><a href="https://www.facebook.com/stevenmills.io/" class="ion-social-facebook"></a></li>
+          <li><a href="mailto:hello@stevenmills.co" class="ion-ios-email"></a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by&nbsp;</span>Steven
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2017-09-17 00:00:00 -0400">September 17, 2017</time>
+    
+  </div>
+
+  <h1 class="post-title">Jumping Into React.js</h1>
+  <div class="post-line"></div>
+
+  <p>This past week I started a web developer internship and it’s been great so far. What I have already noticed from the first week is the need to be constantly researching and continuing learning new technologies.</p>
+
+<p>Before starting this internship I had an interest in wanting to learn React.js, so when my mentor asked which JavaScript framework we should use for a new task, I jumped at the opportunity to learn/use React.</p>
+
+<p>Having some previous knowledge of Angular I felt fairly confident in learning it, however there are some differences and realized I should do a quick tutorial. So below in this post, I will be typing out notes while doing the tutorial on the <a href="https://facebook.github.io/react/tutorial/tutorial.html">React.js</a> website.</p>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p>This has to be the easiest part of using React, all you need to do is follow a couple simple steps to get it running on your machine.</p>
+
+<p>Install <a href="https://nodejs.org/en/">Node.js</a> if you don’t have it yet. Then to install and get React running enter this code into your terminal.</p>
+
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">create</span><span class="o">-</span><span class="nx">react</span><span class="o">-</span><span class="nx">app</span>
+<span class="nx">create</span><span class="o">-</span><span class="nx">react</span><span class="o">-</span><span class="nx">app</span> <span class="nx">my</span><span class="o">-</span><span class="nx">app</span>
+
+<span class="nx">cd</span> <span class="nx">my</span><span class="o">-</span><span class="nx">app</span>
+<span class="nx">npm</span> <span class="nx">start</span></code></pre></figure>
+
+<p><br /></p>
+
+<h3 id="notes-on-react">Notes on React</h3>
+
+<p><em>React is a declarative, efficient, and flexible JavaScript library for building user interfaces.</em></p>
+
+<p>React is made up of many parts, one of the main parts are the components. <em>Components tell React what you want to render -then React will efficiently update and render just the right components when your data changes.</em></p>
+
+<p>A component takes in parameters, called <code class="highlighter-rouge">props</code>, and returns a hierarchy of views to display via the <code class="highlighter-rouge">render</code> method.</p>
+
+<p>The <code class="highlighter-rouge">render</code> method returns a description of what you want to render, and then React takes that description and renders it to the screen. Most developers use a special syntax called JSX which makes it easier to write these structures. The <code class="highlighter-rouge">&lt;div /&gt;</code> syntax is transformed at build time to <code class="highlighter-rouge">React.createElement(‘div’)</code>.</p>
+
+<p>You can put any JavaScript expression within braces inside JSX. Each React element is a real JavaScript object that you can store in a variable or pass around your program.</p>
+
+<p>When a component no longer keeps its own state; it receives its value from its parent component and informs its parent when it’s clicked. Components like this are called <em>Controlled Components</em>.</p>
+
+<p><em>There are generally two ways for changing data. The first method is to mutate the data by directly changing the values of a variable. The second method is to replace the data with a new copy of the object that also includes desired changes.</em>
+<br />
+<br /></p>
+
+<p><em>For example:</em></p>
+
+<p><strong>Data change with mutation</strong><br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">player</span> <span class="o">=</span> <span class="p">{</span><span class="na">score</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Jeff'</span><span class="p">};</span>
+<span class="nx">player</span><span class="p">.</span><span class="nx">score</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">// Now player is {score: 2, name: 'Jeff'}</span></code></pre></figure>
+
+<p><strong>Data Change without mutation</strong><br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">player</span> <span class="o">=</span> <span class="p">{</span><span class="na">score</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'Jeff'</span><span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">newPlayer</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">({},</span> <span class="nx">player</span><span class="p">,</span> <span class="p">{</span><span class="na">score</span><span class="p">:</span> <span class="mi">2</span><span class="p">});</span>
+<span class="c1">// Now player is unchanged, but newPlayer is {score: 2, name: 'Jeff'}</span>
+
+<span class="c1">// Or if you are using object spread syntax proposal, you can write:</span>
+<span class="c1">// var newPlayer = {...player, score: 2};</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+
+<p>The end result is the same but by not mutating (or changing the underlying data) directly we now have an added benefit that can help us increase component and overall application performance.</p>
+
+<p>React supports a simpler syntax called <em>functional components</em>. These are components that only consist of a <code class="highlighter-rouge">render</code> method. Rather than defining a class extending  <code class="highlighter-rouge">React.Component</code>, simply write a function that takes props and returns what should be rendered.</p>
+
+<p><em>For Example:</em></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">Square</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"square"</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">onClick</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">value</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>As I said the purpose of this post was to just show some of the notes I took through out this tutorial. After finishing it I definitely feel like I’ve learned some of the basics of React. But there is still so much more to continue learning and I look forward to all the capabilities this JavaScript library has.</p>
+
+<p>I hope you enjoyed and maybe learned something from this post. Feel free to share and definitely go check out the React docs and the tutorial to learn more.</p>
+
+<p>You can view my repo for the tutorial <a href="https://github.com/stevenmillsii/react-tutorial">Reat.js Tutorial Repo</a>.</p>
+
+
+</div>
+
+<div class="share-page">
+  <p><i>share this post</i></p>
+  <a href="https://twitter.com/intent/tweet?text=Jumping Into React.js&url=http://localhost:4000/2017-09-17/jumping-into-react&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" class="ion-social-twitter"></a>
+  <a href="https://facebook.com/sharer.php?u=http://localhost:4000/2017-09-17/jumping-into-react" rel="nofollow" target="_blank" title="Share on Facebook" class="ion-social-facebook"></a>
+</div>
+
+<div class="pagination">
+  
+  
+    <a href="http://localhost:4000/2017-09-16/example-content" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2017-09-17 12:58:41 -0400">2017</time> Steven Mills. <br>Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+      </span>
+    </footer>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106584829-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
