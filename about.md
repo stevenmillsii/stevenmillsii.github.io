@@ -5,6 +5,11 @@ author: "Steven"
 permalink: /about/
 ---
 
+![Self Portrait](/img/headshot.jpg){:height="200px" width="200px"}
+<br>
+<hr>
+<br>
+<br>
 My name is Steven Mills and I am a full-stack web developer / designer hybrid, currently living in the Charlotte, NC area.
 
 I will soon be finishing up my Full-Stack Bootcamp with Bloc, where I have learned so much about web developing. I also just recently started an internship with a local marketing and advertising company called, Search and Be Found.
