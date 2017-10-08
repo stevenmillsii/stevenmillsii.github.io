@@ -22,10 +22,11 @@
   }
 
   &-line {
-    border-top: .4rem solid $default-shade;
+    border-top: .4rem solid $blue;
     display: block;
     margin: 0 auto 3rem;
     width: 4rem;
+    opacity: .3
   }
 
   p {
