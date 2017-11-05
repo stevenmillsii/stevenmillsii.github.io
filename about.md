@@ -10,15 +10,13 @@ permalink: /about/
 <hr>
 <br>
 <br>
-My name is Steven Mills and I am a full-stack web developer / designer hybrid, currently living in the Charlotte, NC area with my wife and two siberian huskies.
+My name is Steven Mills.<br>
 
-Most of my background has been in photography and graphic design, where I have worked with a variety of clients, from publications, non-profits and large corporations.
+I am currently a junior web designer, developer and photographer located in the Charlotte, NC area.<br>
 
-I recently finished my Full-Stack Web Developer Bootcamp with [Bloc.io](http://bloc.io), where I have learned so much about web developing. I also just recently started an internship with a local web marketing and advertising company called, [Search and Be Found](https://searchandbefound.com/).
+_**But most importantly I am a follower of Christ, husband, and soon to be father.**_
 
-Once I finish up this internship I hope to land a full-time position as a junior web developer where I can continue learning and growing in this amazing field.
-
-Thanks for checking out my page!
-
+Thanks for checking out my page, and feel free to go checkout my design and photography site, links are at the top.
+<br>
 <br>
 <hr>

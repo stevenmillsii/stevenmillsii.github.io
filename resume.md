@@ -8,14 +8,21 @@ permalink: /resume/
 ### Experience
 <br>
 
-**Search & Be Found / 9/17 - 12/17**
+**The Idea People / 11/17 - Present**
+<br>
+*Junior Web Designer*
+<br>
+More info to come once I work here for a substantial amount of time.
+<br>
+
+**Search & Be Found / 9/17 - 11/17**
 <br>
 *Web Developer Internship*
 <br>
 I assist with the daily operations. Whether it is researching tech for new projects, learning and writing code in a new language or styling a web page. Most of my work has been in ReactJS and using Firebase. As well as working with static-generated websites like Jekyll.
 <br>
 
-**Full Spectrum Brewery Co. / 17-Present**
+**Full Spectrum Brewery Co. / 5/17-11/17**
 <br>
 *Assistant Brewer*
 <br>
