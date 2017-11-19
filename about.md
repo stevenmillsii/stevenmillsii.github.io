@@ -12,7 +12,7 @@ permalink: /about/
 <br>
 My name is Steven Mills.<br>
 
-I am currently a junior web designer, developer and photographer located in the Charlotte, NC area.<br>
+I am currently a junior web designer at [The Idea People](http://www.theideapeople.com).<br>
 
 _**But most importantly I am a follower of Christ, husband, and soon to be father.**_
 
